@@ -1,6 +1,6 @@
 # AI Algorithms Base Environment
 
-This repository provides a **base Python environment** for the AI Algorithms course. If you're unsure where to start with setting up your development environment, this guide is for you.
+This repository provides a **base Python environment** for the AI Algorithms course. If you're unsure where to start with setting up your development environment, this guide is for you. At the end their are some submission instructions and recommendations when writing out your responses in Jupyter Notebooks.
 
 ## What This Is
 
@@ -12,7 +12,7 @@ This repository provides a **base Python environment** for the AI Algorithms cou
 
 - **You don't have to use this.** This is just an example to help you get started.
 - **You can add to it.** If you need additional packages, feel free to install them.
-- **Installation instructions were written by Claude** — the Windows instructions may be tricky. I use WSL2 personally and recommend that approach for Windows users.
+- **Installation instructions were written by Claude (verified by instructor)** — the Windows instructions may be tricky. I use WSL2 personally and recommend that approach for Windows users.
 
 ---
 
