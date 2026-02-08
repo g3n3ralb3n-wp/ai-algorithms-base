@@ -1,7 +1,21 @@
+# AIMA Python - AI Algorithms Course Reference
 
+This folder contains the Python companion code from **[Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu)** (AIMA), sourced from the [`aima-python`](https://github.com/aimacode/aima-python) repository. It has been included as part of the **AI Algorithms Base Environment** to give you direct access to textbook algorithm implementations alongside your course assignments.
+
+## How This Fits Into the Course
+
+The parent project (`ai-algorithms-base`) provides your development environment, dependencies, and assignment workflow. This `aima/` folder supplements that with reference implementations and interactive notebooks for the algorithms covered in class. You can:
+
+- **Study the implementations** of algorithms discussed in lectures (search, CSP, logic, planning, MDPs, reinforcement learning, etc.)
+- **Import modules directly** in your assignment notebooks (e.g., `from aima.search import astar_search`)
+- **Run the included Jupyter notebooks** (e.g., `search.ipynb`, `logic.ipynb`) to see worked examples and visualizations
+- **Use the test suite** in `tests/` to verify your understanding of how the algorithms behave
+
+For environment setup, dependencies, and assignment submission instructions, refer to the [main project README](../README.md).
+
+---
 
 # `aima-python` [![Build Status](https://travis-ci.org/aimacode/aima-python.svg?branch=master)](https://travis-ci.org/aimacode/aima-python) [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/aimacode/aima-python)
-
 
 Python code for the book *[Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu).* You can use this in conjunction with a course on AI, or for study on your own. We're looking for [solid contributors](https://github.com/aimacode/aima-python/blob/master/CONTRIBUTING.md) to help.
 
@@ -23,50 +37,9 @@ When complete, this project will have Python implementations for all the pseudoc
 - `search_XX.ipynb`: Notebooks that show how to use the code, broken out into various topics (the `XX`).
 - `tests/test_search.py`: A lightweight test suite, using `assert` statements, designed for use with [`py.test`](http://pytest.org/latest/), but also usable on their own.
 
-# Python 3.7 and up
+# Python Version
 
-The code for the 3rd edition was in Python 3.5; the current 4th edition code is in Python 3.7. It should also run in later versions, but does not run in Python 2. You can [install Python](https://www.python.org/downloads) or use a browser-based Python interpreter such as [repl.it](https://repl.it/languages/python3).
-You can run the code in an IDE, or from the command line with `python -i filename.py` where the `-i` option puts you in an interactive loop where you can run Python functions. All notebooks are available in a [binder environment](http://mybinder.org/repo/aimacode/aima-python). Alternatively, visit [jupyter.org](http://jupyter.org/) for instructions on setting up your own Jupyter notebook environment.
-
-Features from Python 3.6 and 3.7 that we will be using for this version of the code:
-- [f-strings](https://docs.python.org/3.6/whatsnew/3.6.html#whatsnew36-pep498): all string formatting should be done with `f'var = {var}'`, not with `'var = {}'.format(var)` nor `'var = %s' % var`.
-- [`typing` module](https://docs.python.org/3.7/library/typing.html): declare functions with type hints: `def successors(state) -> List[State]:`; that is, give type declarations, but omit them when it is obvious. I don't need to say `state: State`, but in another context it would make sense to say `s: State`.
-- Underscores in numerics: write a million as `1_000_000` not as `1000000`.
-- [`dataclasses` module](https://docs.python.org/3.7/library/dataclasses.html#module-dataclasses): replace `namedtuple` with `dataclass`.
-
-
-[//]: # (There is a sibling [aima-docker]https://github.com/rajatjain1997/aima-docker project that shows you how to use docker containers to run more complex problems in more complex software environments.)
-
-
-## Installation Guide
-
-To download the repository:
-
-`git clone https://github.com/aimacode/aima-python.git`
-
-Then you need to install the basic dependencies to run the project on your system:
-
-```
-cd aima-python
-pip install -r requirements.txt
-```
-
-You also need to fetch the datasets from the [`aima-data`](https://github.com/aimacode/aima-data) repository:
-
-```
-git submodule init
-git submodule update
-```
-
-Wait for the datasets to download, it may take a while. Once they are downloaded, you need to install `pytest`, so that you can run the test suite:
-
-`pip install pytest`
-
-Then to run the tests:
-
-`py.test`
-
-And you are good to go!
+The original AIMA code targets Python 3.7+. The course environment uses **Python 3.13** (see [main README](../README.md) for setup), which is fully compatible.
 
 
 # Index of Algorithms
