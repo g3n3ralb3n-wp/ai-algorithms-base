@@ -8,6 +8,15 @@ This repository provides a **base Python environment** for the AI Algorithms cou
 - Contains all required dependencies for the course
 - Uses **pyenv** for Python version management and **uv** for fast dependency management (a modern alternative to pip and venv)
 
+## Included Reference Codebases
+
+Once you have the environment set up, this repository also includes Python implementations from two well-known algorithm textbooks:
+
+- **[`clrsPython/`](clrsPython/)** — Implementations from *Introduction to Algorithms* (CLRS), 4th Edition, written by Linda Xiao and Tom Cormen
+- **[`aima/`](aima/)** — Implementations from *Artificial Intelligence: A Modern Approach* (AIMA), with interactive Jupyter notebooks
+
+These are excellent resources for understanding how the algorithms we cover in class actually work. When you're stuck on an algorithm, look at the reference implementation first — reading real code is often more helpful than asking ChatGPT or Claude, which can hallucinate details or give you subtly incorrect explanations. The textbook code is vetted, matches the pseudocode you'll see in lectures, and will build stronger intuition than an AI-generated summary.
+
 ## Important Notes
 
 - **You don't have to use this.** This is just an example to help you get started.
