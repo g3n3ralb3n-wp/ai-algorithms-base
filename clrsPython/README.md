@@ -31,6 +31,21 @@ The implementations are organized by chapter, covering topics including:
 
 A `Utility functions` folder contains shared helper code used across chapters.
 
+## Setup: Fixing Cross-Chapter Imports
+
+Many of the CLRS Python files import from other chapters (e.g., Chapter 22's Dijkstra imports from Chapter 10's min-heap). By default Python won't know where to find these, so you'll get `ModuleNotFoundError` when trying to run them.
+
+To fix this, **activate your virtual environment** and run the included setup script from the project root:
+
+```bash
+source .venv/bin/activate
+python clrsPython/setup_paths.py
+```
+
+This creates a `clrs_paths.pth` file in your virtual environment's `site-packages/` that registers every chapter folder on Python's import path. You only need to run it once — the paths will persist for the lifetime of the virtual environment.
+
+If you ever recreate your `.venv`, just run the script again.
+
 ---
 
 ## Original Authors' Note
