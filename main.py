@@ -126,9 +126,10 @@ def test_packages():
     # Jupyter
     print("Testing Jupyter packages...")
     try:
+        import importlib.metadata
         import jupyter
 
-        results.append(("jupyter", jupyter.__version__, "OK"))
+        results.append(("jupyter", importlib.metadata.version('jupyter'), "OK"))
     except ImportError as e:
         results.append(("jupyter", None, f"FAILED: {e}"))
 
